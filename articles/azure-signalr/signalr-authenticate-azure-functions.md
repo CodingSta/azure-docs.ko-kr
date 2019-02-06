@@ -302,7 +302,7 @@ Azure Functions 런타임을 로컬로 실행하고 디버그하는 경우 **loc
 
 메시지를 보내는 경우 연결된 모든 클라이언트에 보낼지, 아니면 지정한 사용자에게 인증된 클라이언트에만 보낼지 여부를 결정할 수 있습니다.
 
-1. VS Code에서 **SendMessage/function.json**을 엽니다.
+1. VS Code에서 **SignalRInfo/function.json을**을 엽니다.
 
 1. *SignalRConnectionInfo* 바인딩의 *userId* 속성에 [바인딩 식](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings#binding-expressions-and-patterns)(`{headers.x-ms-client-principal-name}`)을 삽입합니다. 이렇게 하면 값이 인증된 사용자의 사용자 이름으로 설정됩니다. 특성은 이제 다음과 같습니다.
 
